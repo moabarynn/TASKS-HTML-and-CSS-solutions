@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+/*first task*/
+.first_task div{
+    width: 600px;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #ddd;
+    letter-spacing: 2px;
+    text-align: center;
+    border-left:10px orangered solid;
+    border-right: 10px mediumorchid solid;
+    position: relative;
+
+}
+.first_task div::after{
+    content: "";
+    width: 600px;
+    height: 10px;
+    position: absolute;
+    background-image: linear-gradient(to right , orangered 20% ,
+                                        blue 20% , blue 40% ,
+                                        green 40% ,green 60%,
+                                        red 60%,red 80% ,
+                                        mediumorchid 80% ,mediumorchid 100%);
+    top: -10px;
+    left: -10px;
+}
+.first_task div::before{
+    content: "";
+    width: 600px;
+    height: 10px;
+    position: absolute;
+    background-image: linear-gradient(to right , orangered 20% ,
+                                        blue 20% , blue 40% ,
+                                        green 40% ,green 60%,
+                                        red 60%,red 80% ,
+                                        mediumorchid 80% ,mediumorchid 100%);
+    bottom: -10px;
+    left: -10px;
+}
+.first_task div::first-letter{
+    color: orangered;
+}
+/*second task*/
+.second_task div {
+    width: 600px;
+    margin: 20px auto;
+   
+    background-color: #eee;
+}
+.second_task div input{
+    width: 100%;
+    background-color: #eee;
+    border: none;
+    padding: 20px;
+    caret-color: red;
+    border-bottom: 5px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right ,#f44336 50%,#009688 50% ,#009688 100%);
+}
+.second_task div input:focus{
+    outline: none;
+}

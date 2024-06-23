@@ -1,0 +1,129 @@
+:root{
+    --colorone:orange;
+    --colortwo:#009688;
+    --colorthree:#607d8b;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/*task one*/
+.ass-1 h1{
+    width: 150px;
+    margin: 50px auto;
+    position: relative;
+    background-color:var(--colorone);
+    color: aliceblue;
+   text-align: center;
+   padding: 20px;
+}
+.ass-1 h1::before,
+.ass-1 h1::after{
+    width: 100%;
+    height: 100%;
+    background-color: var(--colorone);
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    z-index: -1;
+}
+.ass-1 h1::before{
+    transform: skew(15deg,15deg);
+}
+.ass-1 h1::after{
+    transform: skew(-15deg,-15deg);
+}
+/*task two*/
+.ass-2 h1{
+    width: 150px;
+    margin: 50px auto;
+    position: relative;
+    background-color:var(--colortwo);
+    color: aliceblue;
+   text-align: center;
+   padding: 20px;
+
+}
+.ass-2 h1::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    left: -20px;
+    top: 0;
+    background-color: var(--colortwo);
+    height: 100%;
+    border-right: 10px solid white;
+    transform: skewX(15deg);
+}
+/*task three*/
+.ass-3{
+    width: 200px;
+    height: 200px;
+    background-color: var(--colorthree);
+    margin: 100px auto;
+    
+    border-bottom: 5px solid black;
+    position: relative;
+
+}
+.ass-3 div::before{
+    position: absolute;
+    content: "";
+    width: 139px;
+    height: 142px;
+    background-color: black;
+    top: -71px;
+    left: 29px;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: rotate(45deg);
+
+}
+.ass-3 div::after{
+    position: absolute;
+    content: "Elzero";
+    color: white;
+    font-size: 16px;
+    bottom: 0;
+    left: 7px;
+}
+/*task four*/
+.ass-4 div{
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+.ass-4 div:hover{
+    transform: rotateX(180deg);
+}
+.ass-4 div::after,
+.ass-4 div::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+}
+.ass-4 div::after{
+    content: "front";
+    background-color: aqua;
+    
+}
+
+.ass-4 div::before{
+    content: "back";
+    background-color: crimson;
+    transform: rotateX(180deg);
+} 

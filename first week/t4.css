@@ -1,0 +1,25 @@
+div{
+    display: inline-block;
+    margin-right: 20px ;
+    background-color: bisque;
+    padding: 50px 80px;
+    margin: auto 20px;
+}
+.element-1{
+    border: solid 4px red;
+    outline: 5px black solid;
+}
+.element-2{
+    outline: 5px black solid;
+    border-top:solid 4px blue;
+    border-right:solid 4px green;
+    border-bottom:solid 4px blue;
+    border-left:solid 4px green;
+}
+.element-3{
+    outline: 5px black solid;
+    border-top:dashed 4px blue;
+    border-right:dashed 4px green;
+    border-bottom:dashed 4px blue;
+    border-left:dashed 4px green;
+}

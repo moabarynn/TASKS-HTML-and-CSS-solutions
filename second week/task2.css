@@ -1,0 +1,52 @@
+/*first task videos from 17 to 21*/
+.pargraph p{
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    text-shadow:1px 1px 0 darkred,2px 2px 0 blue,3px 3px 0 red;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+/*second task videos from 17 to 21*/
+.task2{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+}
+.one{
+    text-transform: uppercase;
+}
+.two{
+    text-transform: capitalize;
+}
+.three{
+    text-transform: lowercase;
+}
+/*third task videos from 17 to 21*/
+.task3{
+    background-color: bisque;
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*fourth task videos from 17 to 21*/
+a{
+    display:inline-block;
+    text-align: center;
+    color: white;
+    background-color: darkcyan;
+    margin: 20 auto;
+    text-transform: capitalize;
+    text-decoration: none;
+    width: fit-content;
+    padding: 20px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-bottom: 5px solid red;
+    
+    
+}

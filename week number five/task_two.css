@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+}
+/*first task*/
+.first div{
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    background-color: #ddd;
+    align-items: center;
+    color: orangered;
+    border-radius: 50%;
+    box-shadow: 5px 0 0 #ff5722,-5px 0 0 #03a9f4;
+}
+/*second task*/
+.second .parent{
+    width: 600px;
+    height: 300px;
+    background-color: #ddd;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+    align-content: space-between;
+   justify-content: space-between;
+}
+.second .parent div{
+   background-color: #ff5722;
+   width: calc((80% / 3));
+   padding: 10px;
+   justify-content: center;
+   display: flex;
+   align-items: center;
+}
+/*third task*/
+.third .parent{
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.third .parent div{
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #607d8b;
+    color: white;
+    width: calc(80% /3);
+}
+.third .parent .one{
+    order: 6;
+    align-self: flex-end;
+}
+.third .parent .two{
+    order: 5;
+}
+.third .parent .three{
+    order: 2;
+    align-self: flex-start;
+}
+.third .parent .four{
+    order: 3;
+}
+.third .parent .five{
+    order: 4;
+}
+/*fourth task*/
+.fourth .parent{
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: #ddd;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.fourth .parent div{
+    height: calc(90% / 3);
+    color: white;
+    background-color: rgb(122 220 180 / 78%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+}
+.fourth .parent .two{
+    align-self: flex-start;
+    width: 50%;
+}
+/*task five*/
+.fifth .parent{
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.fifth .parent div{
+    height: 50%;
+    background-color: #03a9f4;
+    width: calc(80%/4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fifth .parent .one{
+    order: 2;
+    background-color: orange;
+}
+.fifth .parent .two{
+    order: 3;
+    background-color: lightgreen;
+    align-self: flex-end;
+}
+.fifth .parent .four{
+    order: 1;
+    align-self: flex-end;
+    background-color: mediumpurple;
+}
+.fifth .parent .three{
+    order: 4;
+    background-color: brown;
+    
+}
+/*sixth task*/
+:root{
+    --background-color:#ddd;
+    --margin:10px;
+    --padding:10px;
+}
+.sixth .page{
+     background-color: #eee;
+     font-family: Arial, Helvetica, sans-serif;
+     padding: var(--padding);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo,.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    margin: var(--margin);
+    padding: var(--padding);
+}
+.links {
+    list-style: none;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+.links li{
+    padding: var(--padding);
+}
+.main-area{
+    display: flex;
+    justify-content: space-between;
+}
+.content,.sidebar{
+    background-color: var(--background-color);
+    padding: var(--padding);
+    width: calc((100% / 4));
+    margin: var(--margin);
+    height: 400px;
+}
+.content{
+    flex-grow: 1;
+}
+.footer{
+    display: flex;
+    background-color: var(--background-color);
+    padding: var(--padding);
+    margin: var(--margin);
+    justify-content: space-between;
+    
+}
+

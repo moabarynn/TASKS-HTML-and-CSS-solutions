@@ -1,0 +1,115 @@
+/*first task*/
+.first div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.green{
+    background-color: green;
+    z-index: 4;
+    top: 40px;
+    left: 40px;
+}
+.red{
+    background-color: red;
+    z-index: 3;
+    top: 30px;
+    left: 30px;
+}
+.black{
+    background-color: black;
+    z-index: 1;
+    left: 20px;
+    top: 30px;
+}
+.blue{
+    background-color: blue;
+    z-index: 2;
+    top: 20px;
+    left: 20px;
+}
+/*second task*/
+.text{
+    margin-top: 200px;
+}
+.text div{
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ddd;
+    border: solid 2px ;
+    border-color: rgba(255, 0, 0, 0.884) rgb(0, 174, 255);
+    position: relative;
+}
+.top-left,
+.top-right,
+.bottom-left,
+.bottom-right{
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(0, 229, 255);
+   position: absolute;
+   font-weight: 200px;
+   padding:5px 10px;
+}
+.top-left{
+    top: -20px;
+    left: -20px;
+    border-right: 2px solid rgba(255, 0, 0, 0.884) ;
+    border-bottom: 2px solid rgb(0, 183, 255);
+}
+.top-right{
+    top: -20px;
+    right: -20px;
+    border-left: 2px solid rgba(255, 0, 0, 0.884) ;
+    border-bottom: 2px solid rgb(0, 183, 255);
+    
+}
+.bottom-left{
+    bottom: -20px;
+    left: -20px;
+    border-right: 2px solid rgba(255, 0, 0, 0.884) ;
+    border-top: 2px solid rgb(0, 183, 255);
+}
+.bottom-right{
+    bottom: -20px;
+    right: -20px;
+    border-left: 2px solid rgba(255, 0, 0, 0.884) ;
+    border-top: 2px solid rgb(0, 183, 255);
+}
+/*third task*/
+.up{
+  width: 400px;
+  margin: 20px auto;
+}
+.html,.css,.java{
+    background-color: #ddd;
+    margin-top: 20px;
+    padding: 10px;
+    list-style: none;
+
+}
+.html ol,.css ol{
+    margin: 10px;
+    padding-left: 10px ;
+}
+.html ol li,
+.css ol li{
+    background-color: white;
+    padding-left: 5px;
+    margin-bottom: 3px;
+}
+.css ol li{
+    list-style-type: upper-roman;
+}
+.java ul{
+    margin: 10px;
+    padding-left: 0;
+}
+.java ul li{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    list-style-position: inside;
+}
+/*fourth task*/

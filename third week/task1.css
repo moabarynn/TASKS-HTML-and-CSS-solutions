@@ -1,0 +1,48 @@
+/*first task from 27 to 29*/
+.parent{
+    width: 800px;
+    background-color: #eee;
+    margin: 20px auto;
+}
+.parent div{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    background-color:#ddd;
+    padding: 20px 0;
+}
+.clear{
+    clear: both;
+}
+.row-one{
+    width: calc(100% - 30px);
+    
+}
+.row-two{
+    width: calc((100% - 60px)/3);
+}
+.row-three{
+    width: calc((100% - 45px)/2);
+}
+.row-four{
+    width: calc((100% - 75px)/4);
+    margin-bottom: 15px;
+}
+/*second task from 27 to 29*/
+.inhert div {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: #ddd;
+    color: black;
+  }
+  .inhert .one{
+    background-color: rgb(221 221 221 /.1);
+  }
+  .inhert .two{
+    opacity: .1;
+  }

@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+/*ass one*/
+.ass-1 {
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin: 50px auto;
+    border: 5px solid red;
+    border-right-color: white;
+    position: relative;
+    animation: rotate .5s infinite;
+    animation-play-state: running;
+}
+.ass-1:hover{
+    animation-play-state:paused;
+}
+.ass-1::before{
+    content: "";
+    position: absolute;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    border: 5px solid #2490cc;
+    border-radius: 50%;
+    border-left-color: white;
+    top: -1%;
+    left: -5%;
+    margin-top: -35%;
+    margin-left: -35%;
+}
+.ass-1::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    border: 5px solid #fca200;
+    border-radius: 50%;
+    border-bottom-color: white;
+    top: -62%;
+    left: -60%;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}

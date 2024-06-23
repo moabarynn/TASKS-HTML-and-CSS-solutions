@@ -1,0 +1,20 @@
+/*first task videos from 22 to 26*/
+div{
+   
+    border: solid red 2px;
+    margin: 20px auto;
+    padding: 20px;
+}
+ div p{
+    padding: inherit;
+    border: inherit;
+    background-color: grey;
+    text-align: center;
+}
+/*second task videos from 22 to 26*/
+.text p{
+    text-align: center;
+    text-transform: capitalize;
+    margin: 20px auto;
+    padding: 20px;
+}
